@@ -45,7 +45,7 @@ mim install mmdet==3.0.0
 pip3 install matplotlib \
                 scipy \
                 Pillow \
-                numpy \
+                numpy<=1.19\
                 prettytable \
                 easydict \
                 scikit-learn \
@@ -78,3 +78,6 @@ https://drive.google.com/drive/folders/1f9vTZA336qr9JL8nPbA9fmH5hVU8rcuJ?usp=sha
 ```bash
 bash scripts/run_mcpt.sh
 ```
+修改eval_mcpt.py第28行
+修改trackers/multicam_tracker/cluster_track.py第153行
+修改trackers/multicam_tracker/clustering.py第27行
